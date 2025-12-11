@@ -1,54 +1,48 @@
-📊 Coletor Automático de Cotações – Selenium + Pandas
+# 📊 Coletor Automático de Cotações – Selenium + Pandas  
 
-Este projeto automatiza a coleta de preços de commodities diretamente do site Melhor Câmbio, utilizando Python, Pandas e Selenium.
-Ele lê uma planilha, consulta o preço atual de cada produto e gera um relatório atualizado 📈💰
+![Banner do Projeto](https://raw.githubusercontent.com/github/explore/main/topics/python/python.png)
 
-🚀 Funcionalidades
+---
 
-📥 Lê automaticamente uma planilha Excel (commodities.xlsx)
+## 🧿 **Badges do Projeto**
+<p align="left">
+  <img src="https://img.shields.io/badge/Python-3.10+-blue?logo=python&logoColor=white">
+  <img src="https://img.shields.io/badge/Selenium-Automation-green?logo=selenium">
+  <img src="https://img.shields.io/badge/Pandas-Data%20Analysis-yellow?logo=pandas">
+  <img src="https://img.shields.io/badge/Status-Ativo-success?style=flat">
+  <img src="https://img.shields.io/github/license/jefferson/projeto?color=lightgrey">
+</p>
 
-🌐 Acessa o site melhorcambio.com com Selenium
+---
 
-🔎 Captura o valor comercial atual de cada commodity
+# 🦾 **Descrição do Projeto**
 
-✏ Atualiza a planilha com:
+Este projeto automatiza a coleta de preços de commodities diretamente do site **Melhor Câmbio**, utilizando **Python + Selenium + Pandas** — gerando automaticamente um relatório Excel atualizado.  
+Ele é ideal para estudos de **web scraping, automação, análise de dados e RPA** 🤖📈
 
-Preço Atual
+---
 
-Indicador se deve comprar (Sim/Não)
+# 🔥 **Demonstração Visual**
+> Painel ilustrativo (exemplo apenas)
 
-📤 Exporta tudo para ordemDeCompras.xlsx
+![Demonstração](https://raw.githubusercontent.com/github/explore/main/topics/selenium/selenium.png)
 
-🧩 Como funciona o código
+---
 
-Carrega os dados usando Pandas
+# 🚀 **Funcionalidades**
+- 📥 Importa a planilha `commodities.xlsx`
+- 🌐 Acessa automaticamente o site do Melhor Câmbio
+- 🔎 Extrai o valor comercial de cada commodity
+- ✏ Atualiza o Excel com:
+  - ✔ Preço Atual  
+  - ✔ Indicador **Comprar**
+- 📤 Gera um arquivo final `ordemDeCompras.xlsx`
 
-Abre o Chrome com Selenium WebDriver
+---
 
-Percorre cada linha da planilha
+# 📘 **Código Base do Projeto**
 
-Busca o preço atualizado no Melhor Câmbio
-
-Converte o valor para float
-
-Compara com o Preço Ideal
-
-Gera um arquivo final atualizado
-
-🛠 Tecnologias Utilizadas
-
-🐍 Python 3
-
-📦 Pandas
-
-🌐 Selenium WebDriver
-
-💻 Chrome / ChromeDriver
-
-📑 Excel (.xlsx)
-
-📘 Código Principal
-´´´python
+```python
 import pandas as pd
 from selenium import webdriver
 
@@ -72,29 +66,70 @@ print(df)
 nave.quit()
 
 df.to_excel('ordemDeCompras.xlsx')
-´´´
-📂 Estrutura Recomendada do Projeto
+```
+
+---
+
+# 🗂 **Estrutura Sugerida**
+
+```
 📁 projeto-cotacoes
  ├── 📄 commodities.xlsx
  ├── 📄 ordemDeCompras.xlsx
  ├── 🐍 coletor.py
  └── 📄 README.md
+```
 
-⚠️ Observações Importantes
+---
 
-Certifique-se de ter o ChromeDriver instalado e compatível com sua versão do Google Chrome.
+# 🛠 **Tecnologias Usadas**
+- 🐍 Python  
+- 🐼 Pandas  
+- 🤖 Selenium WebDriver  
+- 🧭 ChromeDriver  
+- 📑 Excel  
 
-O site pode mudar o ID do input futuramente — nesse caso será necessário atualizar o XPATH.
+---
 
-Alguns produtos podem não existir no site → trate exceções!
+# ⚠️ Requisitos
 
-🎯 Resultado Final
+Certifique-se de ter instalado:
 
-Ao terminar, você terá um Excel atualizado com:
+```
+pip install pandas selenium openpyxl
+```
 
-Produto	Preço Ideal	Preço Atual	Comprar
-ouro	350.00	320.50	✔ Sim
-prata	50.00	55.20	❌ Não
-🤝 Contribuição
+E também o **ChromeDriver** compatível com sua versão do Chrome.
 
-Sinta-se à vontade para melhorar este projeto, enviar sugestões ou pedir funcionalidades novas! ✨
+---
+
+# 💡 Exemplo de Resultado Final
+
+| Produto | Preço Ideal | Preço Atual | Comprar |
+|--------|-------------|-------------|---------|
+| ouro   | 350.00      | 320.50      | ✔ Sim |
+| prata  | 50.00       | 55.20       | ❌ Não |
+
+---
+
+# 🤝 **Contribuindo**
+Pull requests são muito bem-vindos!  
+Achou um bug? Abra uma issue 🐛  
+Quer melhorar o design? Manda ver 🎨  
+
+---
+
+# 📜 **Licença**
+Este projeto está sob licença MIT.  
+
+---
+
+# 🎁 Personalizações
+Se quiser, posso criar também:
+- Uma capa em estilo **e-book**  
+- Uma logo personalizada  
+- Uma versão com dark mode  
+- Badges com seu nome de usuário do GitHub  
+
+Só pedir! 🚀
+
