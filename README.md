@@ -22,12 +22,6 @@ Ele é ideal para estudos de **web scraping, automação, análise de dados e RP
 
 ---
 
-# 🔥 **Demonstração Visual**
-> Painel ilustrativo (exemplo apenas)
-
-![Demonstração](https://raw.githubusercontent.com/github/explore/main/topics/selenium/selenium.png)
-
----
 
 # 🚀 **Funcionalidades**
 - 📥 Importa a planilha `commodities.xlsx`
