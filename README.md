@@ -48,7 +48,7 @@ Gera um arquivo final atualizado
 📑 Excel (.xlsx)
 
 📘 Código Principal
-'''python
+´´´python
 import pandas as pd
 from selenium import webdriver
 
@@ -72,7 +72,7 @@ print(df)
 nave.quit()
 
 df.to_excel('ordemDeCompras.xlsx')
-'''
+´´´
 📂 Estrutura Recomendada do Projeto
 📁 projeto-cotacoes
  ├── 📄 commodities.xlsx
